@@ -83,7 +83,7 @@ header {
   border-bottom: 1px solid #ECECEC;
 }
 
-.header-nav__row {
+.header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
