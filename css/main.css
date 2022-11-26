@@ -103,7 +103,7 @@ header {
   letter-spacing: 0.03em;
 }
 
-.logo-blue {
+.my-logo--blue {
   color: #2196F3;
 }
 
@@ -207,8 +207,8 @@ header {
   color: #2196F3;
 }
 
-.phone-icon,
-.email-icon {
+.phone__icon,
+.email__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -943,7 +943,7 @@ header {
           align-items: baseline;
 }
 
-.logo-white {
+.my-logo--white {
   color: #FFFFFF;
 }
 
