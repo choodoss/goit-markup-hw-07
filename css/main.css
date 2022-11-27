@@ -73,23 +73,30 @@ img {
   margin: -1px;
 }
 
+.button, .mail-push__button, .feedback-form__button, .hi-banner__button {
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  background-color: #2196F3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover, .mail-push__button:hover, .feedback-form__button:hover, .hi-banner__button:hover, .button:focus, .mail-push__button:focus, .feedback-form__button:focus, .hi-banner__button:focus {
+  background-color: #188CE8;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-header {
-  border-bottom: 1px solid #ECECEC;
-}
-
-.header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .my-logo {
@@ -105,6 +112,15 @@ header {
 
 .my-logo--blue {
   color: #2196F3;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-nav__list {
@@ -154,14 +170,14 @@ header {
           transform: scaleX(100%);
 }
 
-.main__title.current::after {
+.main__title.main__title--current::after {
   opacity: 1;
   -webkit-transform: scaleX(100%);
           transform: scaleX(100%);
   color: #2196F3;
 }
 
-.current {
+.main__title--current {
   color: #2196F3;
 }
 
@@ -213,6 +229,10 @@ header {
   fill: currentColor;
 }
 
+header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .section {
   padding: 94px 0;
 }
@@ -240,25 +260,11 @@ header {
   color: #FFFFFF;
 }
 
-.hi-banner__buttom {
-  display: block;
+.hi-banner__button {
   padding: 10px 32px;
+  display: block;
   margin: 0 auto;
   text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #FFFFFF;
-  background-color: #2196F3;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hi-banner__buttom:focus, .hi-banner__buttom:hover {
-  background-color: #188CE8;
 }
 
 .features__row {
@@ -358,7 +364,7 @@ header {
   background-color: #F5F4FA;
 }
 
-.team-list__row {
+.team-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,10 +774,6 @@ header {
   padding-left: 23px;
 }
 
-.feedback-form__buttom {
-  width: 200px;
-}
-
 .feedback-form__icon {
   position: absolute;
   left: 12px;
@@ -799,7 +801,7 @@ header {
   gap: 8px;
 }
 
-.button {
+.button, .mail-push__button, .hi-banner__button, .feedback-form__button {
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -814,9 +816,7 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button:hover,
-.button:focus {
+.button:hover, .mail-push__button:hover, .hi-banner__button:hover, .feedback-form__button:hover, .button:focus, .mail-push__button:focus, .hi-banner__button:focus, .feedback-form__button:focus {
   color: #FFFFFF;
   background-color: #2196F3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1090,7 +1090,7 @@ header {
   color: #ffffff;
 }
 
-.mail-push__buttom {
+.mail-push__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1100,26 +1100,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.buttom {
-  min-width: 200px;
-  height: 50px;
-  padding: 10px 20px;
-  background-color: #2196F3;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.buttom:hover, .buttom:focus {
-  background-color: #188CE8;
 }
 
 .mail-push__icon {

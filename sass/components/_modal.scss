@@ -252,8 +252,8 @@
     padding-left: 23px;
 }
 
-.feedback-form__buttom {
-    width: 200px;
+.feedback-form__button {
+@extend .button;
 }
 
 .feedback-form__icon {

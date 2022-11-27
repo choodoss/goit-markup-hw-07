@@ -21,7 +21,7 @@
             <nav class="header-nav">
                 <a class="my-logo" href="./"><span class="my-logo--blue">Web</span>Studio</a>
                 <ul class="main-nav__list">
-                    <li class="main-nav__item"><a href="#" class="main__title current">Студія</a></li>
+                    <li class="main-nav__item"><a href="#" class="main__title main__title--current">Студія</a></li>
                     <li class="main-nav__item"><a href="./portfolio.html" class="main__title">Портфоліо</a></li>
                     <li class="main-nav__item"><a href="#" class="main__title">Контакти</a></li>
                 </ul>
@@ -45,7 +45,7 @@
             <div class="container">
                 <div class="hi-banner__body">
                     <h1 class="hi-banner__title">Ефективні рішення для <br> вашого бізнесу</h1>
-                    <button type="button" class="hi-banner__buttom" data-modal-open>Замовити послугу</button>
+                    <button type="button" class="hi-banner__button" data-modal-open>Замовити послугу</button>
                 </div>
             </div>
         </section>
@@ -125,7 +125,7 @@
         <section class="section team">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
-                <ul class="team-list__row">
+                <ul class="team-list">
                     <li class="team__item">
                         <img src="./img/Igor_Demyanenko.jpg" width="270" alt="фото Ігоря Дем'яненко">
                         <div class="team__body">
@@ -290,21 +290,24 @@
                 <form class="feedback-form" action="">
                     <div class="feedback-form__row">
                         <div class="feedback-form__item">
-                            <input class="feedback-form__input" type="text" name="name" id="feedback-form-name" placeholder=" ">
+                            <input class="feedback-form__input" type="text" name="name" id="feedback-form-name"
+                                placeholder=" ">
                             <label class="feedback-form__lable" for="feedback-form-name">Ім'я</label>
                             <svg class="feedback-form__icon">
                                 <use height="18" width="18" href="./img/icons.svg#icon-user_modal">
                             </svg>
                         </div>
                         <div class="feedback-form__item">
-                            <input class="feedback-form__input" type="tel" name="phone" id="feedback-form-tel" placeholder=" ">
+                            <input class="feedback-form__input" type="tel" name="phone" id="feedback-form-tel"
+                                placeholder=" ">
                             <label class="feedback-form__lable" for="feedback-form-tel">Телефон</label>
                             <svg class="feedback-form__icon">
                                 <use height="18" width="18" href="./img/icons.svg#icon-phone_modal">
                             </svg>
                         </div>
                         <div class="feedback-form__item">
-                            <input class="feedback-form__input" type="email" name="e-mail" id="feedback-form-email" placeholder=" ">
+                            <input class="feedback-form__input" type="email" name="e-mail" id="feedback-form-email"
+                                placeholder=" ">
                             <label class="feedback-form__lable" for="feedback-form-email">Пошта</label>
                             <svg class="feedback-form__icon">
                                 <use height="18" width="18" href="./img/icons.svg#icon-meil_modal">
@@ -324,7 +327,7 @@
                             <span class="checkbox-style"></span>
                         </label>
                     </div>
-                    <button class="feedback-form__buttom buttom" type="submit">Відправити</button>
+                    <button class="feedback-form__button" type="submit">Відправити</button>
                 </form>
             </div>
         </div>
@@ -337,8 +340,8 @@
                             class="my-logo--white">Studio</span></a>
                     <address class="address__body">
                         <ul class="address__list">
-                            <li class="address__item"><a href="https://goo.gl/maps/1QhM3WFyMhCo5uu47"
-                                    target="_blank" class="map">м. Київ, пр-т Лесі Українки, 26</a></li>
+                            <li class="address__item"><a href="https://goo.gl/maps/1QhM3WFyMhCo5uu47" target="_blank"
+                                    class="map">м. Київ, пр-т Лесі Українки, 26</a></li>
                             <li class="address__item"><a class="email"
                                     href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                             <li class="address__item"><a href="tel:+380961111111" class="phone">+38 096 111 11
@@ -349,20 +352,20 @@
                 <div class="social__column">
                     <p class="social__column-text">приєднуйтесь</p>
                     <ul class="social-list">
-                        <li class="social-list__item"><a class="social-list__link" href="#" target="_blank"><svg width="20"
-                                    height="20" class="social-list__icon">
+                        <li class="social-list__item"><a class="social-list__link" href="#" target="_blank"><svg
+                                    width="20" height="20" class="social-list__icon">
                                     <use href="./img/icons.svg#icon-instagram">
                                 </svg></a></li>
-                        <li class="social-list__item"><a class="social-list__link" href="#" target="_blank"><svg width="20"
-                                    height="20" class="social-list__icon">
+                        <li class="social-list__item"><a class="social-list__link" href="#" target="_blank"><svg
+                                    width="20" height="20" class="social-list__icon">
                                     <use href="./img/icons.svg#icon-twitter">
                                 </svg></a></li>
-                        <li class="social-list__item"><a class="social-list__link" href="#" target="_blank"><svg width="20"
-                                    height="20" class="social-list__icon">
+                        <li class="social-list__item"><a class="social-list__link" href="#" target="_blank"><svg
+                                    width="20" height="20" class="social-list__icon">
                                     <use href="./img/icons.svg#icon-facebook">
                                 </svg></a></li>
-                        <li class="social-list__item"><a class="social-list__link" href="#" target="_blank"><svg width="20"
-                                    height="20" class="social-list__icon">
+                        <li class="social-list__item"><a class="social-list__link" href="#" target="_blank"><svg
+                                    width="20" height="20" class="social-list__icon">
                                     <use href="./img/icons.svg#icon-linkedin">
                                 </svg>
                             </a>
@@ -375,7 +378,7 @@
                         <div class="mail-push__row">
                             <input class="mail-push__input" type="email" name="E-mail-subscribe" id="e-mail-push"
                                 placeholder="E-mail">
-                            <button class="mail-push__buttom buttom" type="submit">Підписатися <svg
+                            <button class="mail-push__button" type="submit">Підписатися <svg
                                     class="mail-push__icon" width="24" height="24">
                                     <use href="./img/icons.svg#icon-send">
                                 </svg> </button>
