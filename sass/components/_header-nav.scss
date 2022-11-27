@@ -37,7 +37,7 @@
         transition: $transition-opacity, $transition-transform;
     }
 
-    &focus,
+    &:focus,
     &:hover {
         color: $primary-color-hover;
 
