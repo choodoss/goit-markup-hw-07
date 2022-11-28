@@ -156,7 +156,6 @@
 .feedback-form__input {
     width: 100%;
 
-
     &:focus~.feedback-form__lable {
         transform: translate(-42px, -29px);
     }
@@ -177,6 +176,7 @@
     &:not(:placeholder-shown)~.feedback-form__icon {
         color: $primary-color-hover;
     }
+   
 }
 
 .feedback-form__textarea {
