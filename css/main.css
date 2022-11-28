@@ -99,6 +99,10 @@ img {
   margin: 0 auto;
 }
 
+header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .my-logo {
   display: inline-block;
   margin-right: 93px;
@@ -205,6 +209,11 @@ img {
   color: #2196F3;
 }
 
+.email__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .phone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,14 +231,9 @@ img {
   color: #2196F3;
 }
 
-.phone__icon,
-.email__icon {
+.phone__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-header {
-  border-bottom: 1px solid #ECECEC;
 }
 
 .section {
